@@ -14,7 +14,7 @@ def start(message: telebot.types.Message):
 def handler_help(message: telebot.types.Message):
     text = 'Чтобы начать работу, введите следующий запрос:\n<Имя валюты, цену которой нужно узнать> \
 <Имя валюты в которой надо узнать цену первой валюты> \
-<Количество первой валюты>\nУвидеть список доступных валют можно с помощбю команды: /values'
+<Количество первой валюты>\nУвидеть список доступных валют можно с помощью команды: /values'
     bot.reply_to(message, text)
 
 @bot.message_handler(commands=['values'])
