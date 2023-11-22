@@ -37,7 +37,7 @@ def handler_convert(message: telebot.types.Message):
     except ConvertionException as e:
         bot.reply_to(message, f'Ошибка пользователя!\n{e}')
     except Exception as e:
-        bot.reply_to(message, f'Что-то пошло не так с \n{e}')
+        bot.reply_to(message, f'Что-то пошло не так с {e}')
     else:
         text = f'Цена {amount} {quote} в {base} - {total_base}'
         bot.send_message(message.chat.id, text)
