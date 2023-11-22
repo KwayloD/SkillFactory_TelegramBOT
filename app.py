@@ -21,7 +21,7 @@ def handler_help(message: telebot.types.Message):
 def handler_values(message: telebot.types.Message):
     text = 'Доступные валюты:'
     for key in keys.keys():
-        text = '\n'.join((text,key, ))
+        text = '\n'.join((text, key, ))
     bot.reply_to(message, text)
 
 @bot.message_handler(content_types=['text'])
