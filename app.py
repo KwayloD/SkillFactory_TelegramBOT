@@ -6,7 +6,8 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def start(message: telebot.types.Message):
-    text = 'Привет! Я Бот-Конвертер валют. Я могу: \n- Показать список доступных валют через команду: /values \n- Вывести конвертацию валюты.\n - Узнать, как конвертировать валюту можно через команду: /help'
+    text = 'Привет! Я Бот-Конвертер валют. Я могу: \n- Показать список доступных валют через команду: ' \
+           '/values \n- Вывести конвертацию валюты.\n - Узнать, как конвертировать валюту можно через команду: /help'
     bot.reply_to(message, text)
 
 @bot.message_handler(commands=['help'])
