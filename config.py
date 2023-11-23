@@ -1,4 +1,4 @@
-TOKEN = '6737442892:AAFLjxAWTG0hCASrGkdBMpMs-_e8fSojeFs'
+TOKEN = '*******************************************'
 keys = {
     'рубль': 'RUB',
     'евро': 'EUR',
